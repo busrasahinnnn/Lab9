@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Time</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex flex-column align-items-center justify-content-center">
+        <div class="header-content text-center">
+            <h1 id="home">Pic-Time</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary custom-dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    Sample Galleries
+                </button>
+                <ul class="dropdown-menu text-center">
+                    <li><button class="dropdown-item dropbtn" id="nature" type="button">Nature</button></li>
+                    <li><button class="dropdown-item dropbtn" id="city" type="button">City</button></li>
+                    <li><button class="dropdown-item dropbtn" id="animals" type="button">Animals</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section id="main-image">
+        <img src="https://t4.ftcdn.net/jpg/07/08/90/53/360_F_708905374_4G6vG9vgNHcZNQOachB4enWYaOA9sfVp.jpg" alt="Main Image">
+    </section>
+    <section id="gallery" style="display: none;">
+        <!-- Images will be dynamically added here -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Pic-Time. All Rights Reserved.</p>
+        <div class="flex-container-image-footer">
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="footer-image" width="50" height="50" src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img class="footer-image" width="50" height="50" src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img class="footer-image" width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" src="">
+    </div>
+    
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

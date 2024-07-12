@@ -1,0 +1,138 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #808080;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+header {
+    background: var(--black);
+    color: var(--white);
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.custom-dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    background-color: var(--black) !important;
+}
+
+.dropdown-item {
+    color: var(--white) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--gray) !important;
+    color: var(--black) !important;
+}
+
+#main-image img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+#gallery img {
+    max-width: 50%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 1em;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.join-now p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#lightbox .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: var(--white);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.flex-container-image-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer-image {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
